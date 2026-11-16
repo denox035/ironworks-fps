@@ -1,0 +1,13 @@
+# Prep / kit / toolchain — NOT part of the entry repo
+kit/
+kit.tar.gz
+kit.zip
+node_modules/
+BUILD_PLAN.md
+DESIGN.md
+competition.json
+requirements.json
+webgl_test.cjs
+test-shot-*.jpg
+muse-usage.jsonl
+bundle.tar.gz
