@@ -1,4 +1,4 @@
-// IRONWORKS — a three.js tactical FPS entry for make.fun threejs-fps-01.
+// IRONWORKS — a three.js tactical FPS entry for make.fun best-game-01.
 // Node 22, standard library only. The game is the game/ folder beside this
 // file: plain static files the browser loads as ES modules, three.js from an
 // import map, no build step, no network at runtime. This program copies
@@ -15,7 +15,7 @@
 import { cpSync, existsSync, mkdirSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildDossier } from './vendor/makefun-threejs.ts';
+import { buildDossier } from './vendor/makefun-game.ts';
 
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
@@ -54,6 +54,7 @@ writeFileSync(
     screenshots: { max: MAX_SHOTS, max_bytes: MAX_SHOT_BYTES },
     game_max_files: 993,
     game_max_bytes: 50331648,
+    game_path_max_bytes: 1000,
   }),
 );
 
